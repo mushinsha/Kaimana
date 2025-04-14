@@ -16,26 +16,33 @@
 
 //Characters
 Ryu ryu;
-Ken ken;
-Guile guile;
+//Ken ken;
 Chun chun;
 Gief gief;
-Blanka blanka;
-Honda honda;
-Dhalsim sim;
-
+Guile guile;
+Akuma akuma;
+//Blanka blanka;
+//Honda honda;
+//Dhalsim sim;
 //DeeJay deeJay;
 //Marisa marisa;
-//Akuma akuma;
-//Terry terry;
 //JP jp;
-//SF2 sf2;
+Terry terry;
+
+
+//MUSHINSHA ADDITIONS
+//Yoshimitsu yoshi;
+Baiken baiken;
+Sol solBadguy;
+//Testament testament; WIP
+//Potemkin potemkin; WIP
 
 //If you run out of program memory when compiling. Then your character settings have pushed you over the limit because I 
 //added so many features that it was already right up against the limit with the 8 world warriors in their default setup
 //The easiest way to solve this is to assign the last two slots as the same character. Effectivly giving you 7 profiles
 //instead of 8.
-const Character* AllCharacters[NUM_CHARACTERS] = { &ryu, &honda, &blanka, &guile, &ken, &chun, &gief, &sim };
+const Character* AllCharacters[NUM_CHARACTERS] = {&solBadguy, &ryu, &terry, &akuma, &baiken, &chun, &gief, &guile};
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -357,7 +364,7 @@ bool pollSwitches(void)
       firsttime = 0;
     }
   }
-
+/*
   // test switch and set LED based on result       // HOME = GUIDE
   // tests if we should switch into or out of tourney mode
   if (digitalRead(PIN_TO_SWITCH_TO_TOURNEY_MODE) == BUTTON_READ_CHECK)
@@ -400,7 +407,7 @@ bool pollSwitches(void)
 
     holdTimeout = 0;
   }
-
+*/
   //Do Character change
   if (testForCharacterChange())
   {
@@ -410,8 +417,8 @@ bool pollSwitches(void)
   // test switchs and set LED based on result
   kaimana.switchHistoryBeginFrame();
 
-  checkButtonPressedAndSetNewColourIfSo(PIN_SELECT, LED_SELECT);// SELECT = BACK
-  checkButtonPressedAndSetNewColourIfSo(PIN_START, LED_START);
+  //checkButtonPressedAndSetNewColourIfSo(PIN_SELECT, LED_SELECT);// SELECT = BACK
+  //checkButtonPressedAndSetNewColourIfSo(PIN_START, LED_START);
 
   if (checkButtonPressedAndSetNewColourIfSo(PIN_P1, LED_P1))
     kaimana.switchHistorySet(EIT_Input_P1);
