@@ -1,3 +1,7 @@
+//-----------------------------------------------------------------------------------------------------------
+This is a fork of Prod's Kaimana codebase that I have barely tweaked for my own uses. All credit goes to him
+//-----------------------------------------------------------------------------------------------------------
+
 # Pods Kaimana V2.0
 
 My kaimana code base is the most feature rich version available. Almost completely rewritten over the original version supplied by Paradise Arcade it provides a host of cool effects as well as bug fixes and better hardware support
