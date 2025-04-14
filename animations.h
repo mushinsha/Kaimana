@@ -84,7 +84,7 @@ typedef struct __attribute__ ((__packed__)) {
 } WaveButtonOrder;
 
 #define FIREBALL_MAX_GROUPS   4
-#define FIREBALL_MAX_BUTTONS  8
+#define FIREBALL_MAX_BUTTONS  12
 
 void WaveEffect_Combo_Animation(EWaveType WaveDirection, EWaveSpeed AnimSpeed, int loops, int Col_R, int Col_G, int Col_B);    // Fireball effect - A wave of colour from one side of the buttons to the other
 void FlashColour_Combo_Animation(int Col_R, int Col_G, int Col_B, int FlashTime);       // Light all buttons one colour for FlashTime in ms
