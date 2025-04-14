@@ -26,42 +26,51 @@
 
 
 // Use this for J4's on your buttons
-#define LED_PER_BUTTON 4
+//#define LED_PER_BUTTON 4
 // Use this for J2's on your buttons
-//#define LED_PER_BUTTON 2
+#define LED_PER_BUTTON 2
 
 //Use this if using J2's for leverless buttons
-//#define LED_PER_JOYSTICK_DIRECTION 2
+#define LED_PER_JOYSTICK_DIRECTION 2
 //Use this if using J4's for leverless buttons or the new Arcade Paradise 16 LED stick controller
-#define LED_PER_JOYSTICK_DIRECTION 4
+//#define LED_PER_JOYSTICK_DIRECTION 4
 
 //If this is true then when you press a diagonal on the joystick it will light 4 lights in the diagonal instead of lighting both cardinal directions (for a total of 8 leds)
-#define USING_JOYSTICK_LED_PCB_AND_WANT_PROPER_DIAGONALS true
+#define USING_JOYSTICK_LED_PCB_AND_WANT_PROPER_DIAGONALS false
 
 //Set Led order here. The gap between each button/direction should match the numbers you just set above.
 #ifdef _LED_ORDER_FULL
-  #define  LED_P4  12
-  #define  LED_P3  8
-  #define  LED_P2  4
-  #define  LED_P1  0
-  #define  LED_K1  28
-  #define  LED_K2  24
-  #define  LED_K3  20
-  #define  LED_K4  16
-  #define  LED_HOME  0xFF
-  #define  LED_START  0xFF
-  #define  LED_SELECT  0xFF
-  #define  LED_UP    44
-  #define  LED_DOWN  36
-  #define  LED_LEFT  32
-  #define  LED_RIGHT 40 
-  // maximum number of LEDs attached to Kaimana board
-  #define  LED_COUNT   48
+#define  LED_LEFT       0
+#define  LED_LEFT_B     1
+#define  LED_DOWN       2
+#define  LED_DOWN_B     3
+#define  LED_RIGHT      4
+#define  LED_RIGHT_B    5  
+#define  LED_P1         6
+#define  LED_P1_B       7
+#define  LED_P2         8 
+#define  LED_P2_B       9
+#define  LED_P3         10
+#define  LED_P3_B       11
+#define  LED_P4         12
+#define  LED_P4_B       13
+#define  LED_K4         14
+#define  LED_K4_B       15
+#define  LED_K3         16
+#define  LED_K3_B       17
+#define  LED_K2         18
+#define  LED_K2_B       19
+#define  LED_K1         20
+#define  LED_K1_B       21
+#define  LED_UP         22
+#define  LED_UP_B       23
+
+#define  LED_COUNT      24
 #endif
 
 #define  LED_ENTRIES         12 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
 //List all buttons that have LED's on them here. NOTE: Order here specifies the idle type "Circle pulse" order. If you have leverless and a jump button where your thumb is then you should swap the positions of up and down. you may also want to move Left to the beginning of the list
-const unsigned char ledList[LED_ENTRIES] = { LED_UP, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_DOWN, LED_LEFT }; 
+const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_UP }; 
 
 //Which button to hold to enter tourney mode (turns off all lights and effects). The commented out version is an example where I dont have a home button so I want to use k4 but since thats already in ledList directly above then I set the led to shine here as 0xFF so its ignored.
 #define PIN_TO_SWITCH_TO_TOURNEY_MODE PIN_HOME
@@ -196,6 +205,12 @@ const EInputTypes HELL_MURDER_INPUT_RIGHT[HELL_MURDER_INPUT_COUNT] PROGMEM = { E
 #define TRIPLEATTACK_TRIGGER_COUNT 3
 const EInputTypes TRIGGER_PPP[TRIPLEATTACK_TRIGGER_COUNT] = { EIT_Input_P3, EIT_Input_P2, EIT_Input_P1 };
 const EInputTypes TRIGGER_KKK[TRIPLEATTACK_TRIGGER_COUNT] = { EIT_Input_K3, EIT_Input_K2, EIT_Input_K1 };
+
+//MUSHINSHA ADDITIONS - 4/13/25
+#define TYRANTRAVE_INPUT_COUNT 6
+const EInputTypes COMBO_TYRANTRAVE_RIGHT[TYRANTRAVE_INPUT_COUNT] PROGMEM = { EIT_Input_Left, EIT_Input_DownLeft, EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right, EIT_Input_Left };
+const EInputTypes COMBO_TYRANTRAVE_LEFT[TYRANTRAVE_INPUT_COUNT] PROGMEM = { EIT_Input_Right, EIT_Input_DownRight, EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left, EIT_Input_Right };
+
 
 // data points for color cycling
 //
