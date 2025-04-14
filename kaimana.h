@@ -114,20 +114,28 @@ enum EIdleType:uint8_t
 
 // basic color definitions with various R,G,B values
 // generic (may  want to prefix with COLOR_* to localize further)
-#define  BLACK    000,000,000
-#define  RED      255,000,000
-#define  GREEN    000,255,000
-#define  YELLOW   255,255,000
-#define  BLUE     000,000,255
-#define  PURPLE   255,000,255
-#define  CYAN     000,255,255
-#define  WHITE    255,255,255
-#define  ORANGE   220,127,0
-#define  GOLD     255,150,0
-#define  BROWN    240,230,140
-#define  GREY     127,127,127
-#define  DARKGREY 60,60,60
-#define  DARKBLUE 000,000,100
+#define  BLACK     000,000,000
+#define  RED       255,000,000
+#define  MAROON    128,0,0
+#define  FIREBRICK 178,34,34
+#define  MAGENTA   255,000,255
+#define  GREEN     000,255,000
+#define  NEONGREEN 57,255,20
+#define  YELLOW    255,255,000
+#define  BLUE      000,000,255
+#define  DARKBLUE  000,000,100
+#define  PURPLE    255,000,255
+#define  CYAN      000,255,255
+#define  WHITE     255,255,255
+#define  ORANGE    220,127,0
+#define  GOLD      255,150,0
+#define  BROWN     240,230,140
+#define  GREY      127,127,127
+#define  DARKGREY  60,60,60
+#define  BEIGE     245,245,220
+
+
+
 
 // RGB value structure.
 typedef struct __attribute__ ((__packed__)) {
