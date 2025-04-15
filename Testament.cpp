@@ -51,17 +51,20 @@ bool Testament::testForCharacterCombos() const
   EInputTypes LeftArray[] = {EIT_Input_Left};
   EInputTypes RightArray[] = {EIT_Input_Right};
 
+  //This is needed for Raging Demon
+  EInputTypes P3K1Array[] = {EIT_Input_P3, EIT_Input_K1};
+
   
   //SUPERS
   //Double Quarter Circle Right [236236 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(WHITE);  
     return true;
   }
     
   //Double Quarter Circle Left [214214 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
   { 
     FlashAllSpeedIncreasing_Combo_Animation(WHITE);  
     return true;
@@ -69,29 +72,33 @@ bool Testament::testForCharacterCombos() const
 
 
   //Guilty Gear Overdrive Input Right [632146 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_RIGHT, TYRANTRAVE_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_RIGHT, TYRANTRAVE_INPUT_COUNT, P1Array, 1, false ) )
   {
-    FlashAllSpeedIncreasing_Combo_Animation(RED); 
+    FlashAllSpeedIncreasing_Combo_Animation(RED);
+    FlashAllSpeedIncreasing_Combo_Animation(WHITE);
+    FlashAllSpeedIncreasing_Combo_Animation(BLUE);   
     return true;
   }
 
   //Guilty Gear Overdrive Input Left [412364 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, P1Array, 1, false ) )
   {
-    FlashAllSpeedIncreasing_Combo_Animation(RED); 
+    FlashAllSpeedIncreasing_Combo_Animation(RED);
+    FlashAllSpeedIncreasing_Combo_Animation(WHITE);
+    FlashAllSpeedIncreasing_Combo_Animation(BLUE); 
     return true;
   }
 
   
   //King of Fighters Super Right [2363214 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DEADLYRAVE_RIGHT, DEADLYRAVE_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DEADLYRAVE_RIGHT, DEADLYRAVE_INPUT_COUNT, P1Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(GOLD);
     return true;
   }
 
   //King of Fighters Super Left [2141236 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DEADLYRAVE_LEFT, DEADLYRAVE_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DEADLYRAVE_LEFT, DEADLYRAVE_INPUT_COUNT, P1Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(GOLD);
     return true;
@@ -99,15 +106,17 @@ bool Testament::testForCharacterCombos() const
 
   
   //Geese Howard (Pretzel) Super Right [1632143 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_RAGINGSTORMN_RIGHT, RAGINGSTORM_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_RAGINGSTORM_RIGHT, RAGINGSTORM_INPUT_COUNT, P1Array, 1, false ) )
   {
+    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, PURPLE);
     FlashAllSpeedIncreasing_Combo_Animation(PURPLE);
     return true;
   }
 
   //Geese Howard (Pretzel) Super Left [3412361 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_RAGINGSTORM_LEFT, RAGINGSTORM_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_RAGINGSTORM_LEFT, RAGINGSTORM_INPUT_COUNT, P1Array, 1, false ) )
   {
+    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, PURPLE);
     FlashAllSpeedIncreasing_Combo_Animation(PURPLE);
     return true;
   }
@@ -127,75 +136,100 @@ bool Testament::testForCharacterCombos() const
     {
       CircleRGB_Combo_Animation(1);  
       FlashAllSpeedIncreasing_Combo_Animation(RED);
+      FlashAllSpeedIncreasing_Combo_Animation(GOLD);
       return true;
     }
   }
 
 
   //Charge Super Left to Right [(4)646 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_CHARGE_SUPER_LEFT_RIGHT, CHARGE_SUPER_INPUT_COUNT, K2Array, 1, true ) )
+  if( kaimana.switchHistoryTest( COMBO_CHARGE_SUPER_LEFT_RIGHT, CHARGE_SUPER_INPUT_COUNT, P1Array, 1, true ) )
   {
     WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, GREEN);  
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, GREEN);  
+    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, RED); 
+    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, GREEN); 
     return true;
   }
 
   //Charge Super Right to Left [(6)464+ ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_CHARGE_SUPER_RIGHT_LEFT, CHARGE_SUPER_INPUT_COUNT, K2Array, 1, true ) )
+  if( kaimana.switchHistoryTest( COMBO_CHARGE_SUPER_RIGHT_LEFT, CHARGE_SUPER_INPUT_COUNT, P1Array, 1, true ) )
   {
     WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, GREEN);  
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, GREEN);  
+    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, RED); 
+    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 0, GREEN); 
     return true;
   }
 
 
+  //Raging Demon Right
+  if( kaimana.switchHistoryTest( HELL_MURDER_INPUT_RIGHT, HELL_MURDER_INPUT_COUNT, P3K1Array, 2, false ))
+  {
+    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, DARKGREY);  
+    Randomise_Combo_Animation(6, 120, 60, RED);
+    Randomise_Combo_Animation(12, 70, 45, RED);
+    Randomise_Combo_Animation(24, 30, 30, RED);
+    FlashColour_Combo_Animation(RED, 750);
+    return true;
+  }
 
 
-  
+  //Raging Demon Left
+  if( kaimana.switchHistoryTest( HELL_MURDER_INPUT_LEFT, HELL_MURDER_INPUT_COUNT, P3K1Array, 2, false ))
+  {
+    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, DARKGREY);  
+    Randomise_Combo_Animation(6, 120, 60, RED);
+    Randomise_Combo_Animation(12, 70, 45, RED);
+    Randomise_Combo_Animation(24, 30, 30, RED);
+    FlashColour_Combo_Animation(RED, 750);
+    return true;
+  }
  
   
   //SPECIAL MOVES
-  //Half Circle Right [41236 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_HALFCIRCLE_RIGHT, HALFCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_HALFCIRCLE_RIGHT, HALFCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    return true;
-  }
-
- //Half Circle Left [63214 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_HALFCIRCLE_LEFT, HALFCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_HALFCIRCLE_LEFT, HALFCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Fast, 0, GOLD); 
-    return true;
-  }
-
-
   //Quarter Circle Right [236 + ATTACK]
   if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
   {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 3, GREEN);    
+    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 3, MAGENTA);    
     return true;
   }
 
   //Quarter Circle Left [214 + ATTACK]
   if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
   {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 3, GREEN);    
+    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 3, MAGENTA);    
     return true;
   }
 
+
+  //Half Circle Right [41236 + ATTACK]
+  if( kaimana.switchHistoryTest( COMBO_HALFCIRCLE_RIGHT, HALFCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
+  {
+    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD); 
+    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, WHITE); 
+    return true;
+  }
+
+ //Half Circle Left [63214 + ATTACK]
+  if( kaimana.switchHistoryTest( COMBO_HALFCIRCLE_LEFT, HALFCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
+  {
+    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Fast, 0, GOLD); 
+    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Fast, 0, WHITE);
+    return true;
+  }
+
+
+  
+
   
   //Dragon Punch Right [623 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P1Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, K1Array, 1, false ) )
   {
     FlashColour_Combo_Animation(GOLD, 250);
     return true;
   }
 
   //Dragon Punch Left [421 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P1Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, K1Array, 1, false ) )
   {
     FlashColour_Combo_Animation(GOLD, 250);
     return true;
@@ -203,14 +237,14 @@ bool Testament::testForCharacterCombos() const
 
   
   //Charge Left to Right [(4)6 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_CHARGE_LEFT_RIGHT, CHARGE_INPUT_COUNT, P1Array, 1, true ) )
+  if( kaimana.switchHistoryTest( COMBO_CHARGE_LEFT_RIGHT, CHARGE_INPUT_COUNT, K1Array, 1, true ) )
   {
     WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, GREEN);  
     return true;
   }
 
   //Charge Right to Left [(6)4 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_CHARGE_RIGHT_LEFT, CHARGE_INPUT_COUNT, P1Array, 1, true ) )
+  if( kaimana.switchHistoryTest( COMBO_CHARGE_RIGHT_LEFT, CHARGE_INPUT_COUNT, K1Array, 1, true ) )
   {
     WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, GREEN);  
     return true;
@@ -225,7 +259,7 @@ bool Testament::testForCharacterCombos() const
 
   
   //Down Down Specials [22 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_DOWN, DOUBLE_DOWN_INPUT_COUNT, P1Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_DOUBLE_DOWN, DOUBLE_DOWN_INPUT_COUNT, K1Array, 1, false ) )
   {
     WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, BLUE);  
     return true;
