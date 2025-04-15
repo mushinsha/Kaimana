@@ -43,7 +43,7 @@ bool Testament::testForCharacterCombos() const
   EInputTypes P2P3Array[] = {EIT_Input_P2, EIT_Input_P3};
 
   //This is needed for KKK inputs
-  EInputTypes K1K2Array[] = {EIT_Input_K1, EIT_Input_ K2};
+  EInputTypes K1K2Array[] = {EIT_Input_K1, EIT_Input_K2};
   EInputTypes K1K3Array[] = {EIT_Input_K1, EIT_Input_K3};
   EInputTypes K2K3Array[] = {EIT_Input_K2, EIT_Input_K3};
 
