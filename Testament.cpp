@@ -99,14 +99,14 @@ bool Testament::testForCharacterCombos() const
 
   
   //Geese Howard (Pretzel) Super Right [1632143 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_RAGING_RIGHT, RAGINGSTORM_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_RAGINGSTORMN_RIGHT, RAGINGSTORM_INPUT_COUNT, K2Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(PURPLE);
     return true;
   }
 
   //Geese Howard (Pretzel) Super Left [3412361 + ATTACK]
-  if( kaimana.switchHistoryTest( COMBO_RAGING_LEFT, RAGINGSTORM_INPUT_COUNT, K2Array, 1, false ) )
+  if( kaimana.switchHistoryTest( COMBO_RAGINGSTORM_LEFT, RAGINGSTORM_INPUT_COUNT, K2Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(PURPLE);
     return true;
