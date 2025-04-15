@@ -15,9 +15,10 @@
 
 
 //Characters
+
 Ryu ryu;
 //Ken ken;
-Chun chun;
+//Chun chun;
 Gief gief;
 Guile guile;
 Akuma akuma;
@@ -34,14 +35,14 @@ Terry terry;
 //Yoshimitsu yoshi;
 Baiken baiken;
 Sol solBadguy;
-//Testament testament; WIP
-//Potemkin potemkin; WIP
+Testament testament;
+//Potemkin potemkin;
 
 //If you run out of program memory when compiling. Then your character settings have pushed you over the limit because I 
 //added so many features that it was already right up against the limit with the 8 world warriors in their default setup
 //The easiest way to solve this is to assign the last two slots as the same character. Effectivly giving you 7 profiles
 //instead of 8.
-const Character* AllCharacters[NUM_CHARACTERS] = {&solBadguy, &ryu, &terry, &akuma, &baiken, &chun, &gief, &guile};
+const Character* AllCharacters[NUM_CHARACTERS] = {&solBadguy, &ryu, &terry, &akuma, &baiken, &testament, &gief, &guile};
 
 
 
