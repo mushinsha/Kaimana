@@ -206,10 +206,21 @@ const EInputTypes HELL_MURDER_INPUT_RIGHT[HELL_MURDER_INPUT_COUNT] PROGMEM = { E
 const EInputTypes TRIGGER_PPP[TRIPLEATTACK_TRIGGER_COUNT] = { EIT_Input_P3, EIT_Input_P2, EIT_Input_P1 };
 const EInputTypes TRIGGER_KKK[TRIPLEATTACK_TRIGGER_COUNT] = { EIT_Input_K3, EIT_Input_K2, EIT_Input_K1 };
 
-//MUSHINSHA ADDITIONS - 4/13/25
-#define TYRANTRAVE_INPUT_COUNT 6
+//MUSHINSHA ADDITIONS
+//Guilty Gear Overdrive Input
+#define TYRANTRAVE_INPUT_COUNT 6  
 const EInputTypes COMBO_TYRANTRAVE_RIGHT[TYRANTRAVE_INPUT_COUNT] PROGMEM = { EIT_Input_Left, EIT_Input_DownLeft, EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right, EIT_Input_Left };
 const EInputTypes COMBO_TYRANTRAVE_LEFT[TYRANTRAVE_INPUT_COUNT] PROGMEM = { EIT_Input_Right, EIT_Input_DownRight, EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left, EIT_Input_Right };
+
+//King of Fighters/SNK Super Input
+#define DEADLYRAVE_INPUT_COUNT 7
+const EInputTypes COMBO_DEADLYRAVE_RIGHT[DEADLYRAVE_INPUT_COUNT] PROGMEM = { EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right, EIT_Input_DownRight, EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left };
+const EInputTypes COMBO_DEADLYRAVE_LEFT[DEADLYRAVE_INPUT_COUNT] PROGMEM = { EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left, EIT_Input_DownLeft, EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right };
+
+//The Famous Geese Howard "Pretzel"
+#define RAGINGSTORM_INPUT_COUNT 7
+const EInputTypes COMBO_RAGINGSTORM_RIGHT[RAGINGSTORM_INPUT_COUNT] PROGMEM = { EIT_Input_DownLeft, EIT_Input_Right, EIT_Input_DownRight, EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left, EIT_Input_DownRight };
+const EInputTypes COMBO_RAGINGSTORM_LEFT[RAGINGSTORM_INPUT_COUNT] PROGMEM = { EIT_Input_DownRight, EIT_Input_Left, EIT_Input_DownLeft, EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right, EIT_Input_DownLeft };
 
 
 // data points for color cycling
