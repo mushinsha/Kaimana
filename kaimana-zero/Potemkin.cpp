@@ -21,7 +21,7 @@
 //  Kaimana Potemkin character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
-//  Created:  November, 2023    Paul 'pod' Denning
+//  Created:  April 21st, 2025 by Hunter "Mushinsha" Nelson
 //
 
 #define __PROG_TYPES_COMPAT__
