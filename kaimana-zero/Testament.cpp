@@ -18,10 +18,10 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Kaimana Ryu character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
+//  Kaimana Testament character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
-//  Created:  November, 2023    Paul 'pod' Denning
+//  Created:  April 2025 by Hunter "Mushinsha" Nelson
 //
 
 #define __PROG_TYPES_COMPAT__
