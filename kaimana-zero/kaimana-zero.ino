@@ -48,21 +48,25 @@ Sol solBadguy;
 //Ramlethal ramlethal;
 //Anji anji;
 //Ino ino;
+//Nagoriyuki nago;
 //Goldlewis goldlewis;
-//Jack-O' jacko;
+//Jack-O jacko;
 //Happy Chaos happy;
 Baiken baiken;
 Testament testament;
 //Bridget bridget;
 //Sin sin;
-//Bedman? bedman;
+//Bedman bedman;
 //Asuka R# asuka;
 //Johnny johnny;
 //Elphelt elphelt;
-//A.B.A aba;
+//ABA aba;
 //Slayer slayer;
 //Dizzy dizzy;
 //Venom venom;
+//Unika unika;
+//Lucy lucy;
+
 
 //If you run out of program memory when compiling. Then your character settings have pushed you over the limit because I 
 //added so many features that it was already right up against the limit with the 8 world warriors in their default setup
