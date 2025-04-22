@@ -1,11 +1,18 @@
 Update movelist for game rosters:
+
 All of Fatal Fury CotW 
 All of Killer Instinct 
 All of Third Strike
 Complete Street Fighter 6
+
+-----------------------------------
+
+Add inputs for Goldlewis Dickenson's Behemoth Typhoon variants
+
 -----------------------------------
 
 Missing from Street Fighter 6:
+
 AKI
 Cammy
 Ed
@@ -18,9 +25,11 @@ MBison
 Mai
 Manon
 Rashid
+
 -----------------------------------
 
 Missing from Guilty Gear Strive:
+
 ABA 
 Anji 
 Asuka 
@@ -48,5 +57,5 @@ Testament (the current code is just a test for all inputs)
 Unika
 Venom
 Zato
------------------------------------
 
+-----------------------------------
