@@ -36,143 +36,28 @@
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
 bool Gato::testForCharacterCombos() const
 {
-  //RisingFang (both sides)
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ))
-  {
-    FlashAllSpeedIncreasing_Combo_Animation(ORANGE);
-    return true;
-  }
   
-  //BusterWolf right
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 2, GOLD);  
-    return true;
-  }
+  //Special Moves
+    //Quaking Fang (right)                  [236 + P]
+    //Quaking Fang (left)                   [214 + P]
+    //Lightning Fang (right)                [623 + P]
+    //Lightning Fang (left)                 [421 + P]
+    //Wind Fang (right)                     [214 + K]
+    //Wind Fang (left)                      [236 + K]
+    //Lull (right)                          [214 + P]
+    //Lull (left)                           [236 + P]
     
-  //BusterWolf left
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 2, GOLD);  
-    return true;
-  }
 
+  //Ignition Gears
+    //Freeze Fang (right)                   [236236 + A or (RL[C])
+    //Freeze Fang (left)                    [214214 + A or (RL[C])
+    //Dragon Fang (right)                   [236236 + B or (RL[D])
+    //Dragon Fang (left)                    [214214 + B or (RL[D])
 
-  //Dragon punch right
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 250);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 500);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 750);
-    return true;
-  }
-    
-  //Dragon punch left
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 250);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 500);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 750);
-    return true;
-  }
+  //Hidden Gear
+    //Shin: Tenryuu Retsuga (right)         [236236 + R1]
+    //Shin: Tenryuu Retsuga (left)          [214214 + R1]
 
-
-  //Fireball to the right
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-
-  //Fireball to the left
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-
-
-  //Power charge kick right
-  //Fireball to the right
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, BLUE);  
-    return true;
-  }
-
-  //Power charge kick left
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Fast, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, BLUE);  
-    return true;
-  }
-
+  
   return false;
 } 
