@@ -47,7 +47,7 @@ Sol solBadguy;
 //Zato zato;
 //Ramlethal ramlethal;
 //Anji anji;
-//I-no ino;
+//Ino ino;
 //Goldlewis goldlewis;
 //Jack-O' jacko;
 //Happy Chaos happy;
