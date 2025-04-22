@@ -1,3 +1,7 @@
+COMPLETE THE FOLLOWING:
+
+-----------------------------------
+
 Update movelist for game rosters:
 
 Fatal Fury CotW 
