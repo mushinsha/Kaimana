@@ -301,89 +301,276 @@ class JP : public Character
     };*/
 };
 
-class Baiken : public Character //copied from Akuma
+
+//GUILTY GEAR STRIVE ROSTER
+class Sol : public Character
 {
   private:
  
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-    //These are the settings I like. Comment in and/or if you like.
-    //virtual EIdleType getIdleAnimationType() const override { return EIT_Disabled; }
-   
-    //virtual int holdPressedButtonColourTimeInMS( ) const { return 500; };  //Make sure this plus...
-    //virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
-
-    //virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(PURPLE); }; //gi
-    //virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //hair
 };
 
-class Yoshimitsu : public Character //copied from Akuma
+class Ky : public Character
 {
   private:
  
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-    //These are the settings I like. Comment in and/or if you like.
-    //virtual EIdleType getIdleAnimationType() const override { return EIT_Disabled; }
-   
-    //virtual int holdPressedButtonColourTimeInMS( ) const { return 500; };  //Make sure this plus...
-    //virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
-
-    //virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(PURPLE); }; //gi
-    //virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //hair
 };
 
-class Sol : public Character //copied from Akuma
+class May : public Character
 {
   private:
  
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-    //These are the settings I like. Comment in and/or if you like.
-    //virtual EIdleType getIdleAnimationType() const override { return EIT_Disabled; }
-   
-    //virtual int holdPressedButtonColourTimeInMS( ) const { return 500; };  //Make sure this plus...
-    //virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
-
-    //virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(PURPLE); }; //gi
-    //virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //hair
 };
 
-class Testament : public Character //copied from Akuma
+class Axl : public Character
 {
   private:
  
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-    //These are the settings I like. Comment in and/or if you like.
-    //virtual EIdleType getIdleAnimationType() const override { return EIT_Disabled; }
-   
-    //virtual int holdPressedButtonColourTimeInMS( ) const { return 500; };  //Make sure this plus...
-    //virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
-
-    //virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(PURPLE); }; //gi
-    //virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //hair
 };
 
-class Potemkin : public Character //copied from Akuma
+class Chipp : public Character
 {
   private:
  
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-    //These are the settings I like. Comment in and/or if you like.
-    //virtual EIdleType getIdleAnimationType() const override { return EIT_Disabled; }
-   
-    //virtual int holdPressedButtonColourTimeInMS( ) const { return 500; };  //Make sure this plus...
-    //virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
+};
 
-    //virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(PURPLE); }; //gi
-    //virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //hair
+class Potemkin : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Faust : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Millia : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Zato : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Ramlethal : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Anji : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Ino : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Nagoriyuki : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Goldlewis : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class JackO : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class HappyChaos : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Baiken : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Testament : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Bridget : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Sin : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Bedman : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Asuka : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Johnny : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Elphelt : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class ABA : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+	
+};
+
+class Slayer : public Character 
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Dizzy : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Venom : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Unika : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
+};
+
+class Lucy : public Character
+{
+  private:
+ 
+  public:
+    virtual bool testForCharacterCombos( ) const override;
+
 };
 
 #endif
