@@ -1,4 +1,4 @@
-//  Bedman?.cpp
+//  Bedman.cpp
 //
 //  Copyright 2023 Paradise Arcade Shop, ParadiseArcadeShop.com  
 //  All rights reserved.  Use is subject to license terms.
@@ -34,7 +34,7 @@
 #include "Characters.h"
 
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
-bool Bedman?::testForCharacterCombos() const
+bool Bedman::testForCharacterCombos() const
 {
   
   //This is needed for PPP inputs
