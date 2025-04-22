@@ -37,10 +37,11 @@
 bool Potemkin::testForCharacterCombos() const
 {
 
+
   //OVERDRIVES
   //Heavenly Potemkin Buster [641236 or 412364 + S]
   if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_RIGHT, TYRANTRAVE_INPUT_COUNT, P2Array, 1, false ) ||
-    ( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, P2Array, 1, false ) )
+      kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, P2Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(RED);
     FlashAllSpeedIncreasing_Combo_Animation(WHITE);
@@ -50,7 +51,7 @@ bool Potemkin::testForCharacterCombos() const
 
   //Gaiganter Kai [641236 or 412364 + HS]
   if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_RIGHT, TYRANTRAVE_INPUT_COUNT, K2Array, 1, false ) ||
-    ( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, K2Array, 1, false ) )
+      kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, K2Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(GREEN);
     FlashAllSpeedIncreasing_Combo_Animation(GOLD);
@@ -62,7 +63,7 @@ bool Potemkin::testForCharacterCombos() const
   //SPECIAL MOVES
   //Potemkin Buster [641236 or 412364 + P]
   if( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_RIGHT, TYRANTRAVE_INPUT_COUNT, P1Array, 1, false ) ||
-    ( kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, P1Array, 1, false ) )
+      kaimana.switchHistoryTest( COMBO_TYRANTRAVE_LEFT, TYRANTRAVE_INPUT_COUNT, P1Array, 1, false ) )
   {
     FlashAllSpeedIncreasing_Combo_Animation(WHITE);
     FlashAllSpeedIncreasing_Combo_Animation(ORANGE);
@@ -73,7 +74,7 @@ bool Potemkin::testForCharacterCombos() const
   
   //Mega Fist (both directions) [236 + P]
   if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-    ( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
+      kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
   {
     WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Medium, 2, RED);    
     return true;
@@ -82,7 +83,7 @@ bool Potemkin::testForCharacterCombos() const
   
   //Slide Head (both directions) [236 + S]
   if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-    ( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
+      kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
   {
     WaveEffect_Combo_Animation(EFT_UpToDown, EFS_Slow, 0, GREEN);    
     return true;
