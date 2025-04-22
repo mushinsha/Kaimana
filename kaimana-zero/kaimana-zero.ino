@@ -34,10 +34,35 @@ Terry terry;
 //MUSHINSHA ADDITIONS
 
 //Yoshimitsu yoshi;
-Baiken baiken;
+
+//Guilty Gear Strive Roster
 Sol solBadguy;
-Testament testament;
+//Ky ky;
+//May may;
+//Axl axl;
+//Chipp chipp;
 //Potemkin potemkin;
+//Faust faust;
+//Millia millia;
+//Zato zato;
+//Ramlethal ramlethal;
+//Anji anji;
+//I-no ino;
+//Goldlewis goldlewis;
+//Jack-O' jacko;
+//Happy Chaos happy;
+Baiken baiken;
+Testament testament;
+//Bridget bridget;
+//Sin sin;
+//Bedman? bedman;
+//Asuka R# asuka;
+//Johnny johnny;
+//Elphelt elphelt;
+//A.B.A aba;
+//Slayer slayer;
+//Dizzy dizzy;
+//Venom venom;
 
 //If you run out of program memory when compiling. Then your character settings have pushed you over the limit because I 
 //added so many features that it was already right up against the limit with the 8 world warriors in their default setup
