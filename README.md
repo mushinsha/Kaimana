@@ -1,8 +1,11 @@
 Update movelist for game rosters:
 
-All of Fatal Fury CotW 
-All of Killer Instinct 
-All of Third Strike
+Fatal Fury CotW 
+
+Killer Instinct 
+
+Third Strike
+
 Complete Street Fighter 6
 
 -----------------------------------
