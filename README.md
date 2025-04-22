@@ -21,10 +21,10 @@ Rashid
 -----------------------------------
 
 Missing from Guilty Gear Strive:
-ABA
-Anji
-Asuka
-Axl
+ABA 
+Anji 
+Asuka 
+Axl 
 Bedman
 Bridget
 Chipp
