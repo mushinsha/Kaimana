@@ -36,143 +36,31 @@
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
 bool Mai_cotw::testForCharacterCombos() const
 {
-  //RisingFang (both sides)
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ))
-  {
-    FlashAllSpeedIncreasing_Combo_Animation(ORANGE);
-    return true;
-  }
+
+  //Special Moves
+    //Kachousen (right)                       [236 + P]
+    //Kachousen (left)                        [214 + P]
+    //Ryuuenbu (right)                        [214 + P]
+    //Ryuuenbu (left)                         [236 + P]
+    //Hissatsu Shinobi Bachi (right)          [236 + B or D]
+    //Hissatsu Shinobi Bachi (left)           [214 + B or D]
+    //Sayo Chidori (right)                    [214 + K]
+    //Sayo Chidori (left)                     [236 + K]
+    //Hana Arashi (right)                     [623 + B or D]
+    //Hana Arashi (left)                      [421 + B or D]
+    //Musasabi no Mai                         [(2)8 + P]
+    //Air Musasabi no Mai (right)             [214 + P]
+    //Air Musasabi no Mai (left)              [236 + P]
+
+  //Ignition Gears
+    //Kagerou no Mai (right)                  [236236 + A or (RL[C])
+    //Kagerou no Mai (left)                   [214214 + A or (RL[C])
+    //Chou Hissatsu Shinobi Bachi (right)     [236236 + B or (RL[D])
+    //Chou Hissatsu Shinobi Bachi (left)      [214214 + B or (RL[D])
+
+  //Hidden Gear
+    //Ouran no Mai: Akasuzumi (right)         [236236 + R1]
+    //Ouran no Mai: Akasuzumi (left)          [214214 + R1]
   
-  //BusterWolf right
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 2, GOLD);  
-    return true;
-  }
-    
-  //BusterWolf left
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 2, GOLD);  
-    return true;
-  }
-
-
-  //Dragon punch right
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 250);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 500);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 750);
-    return true;
-  }
-    
-  //Dragon punch left
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 250);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 500);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 750);
-    return true;
-  }
-
-
-  //Fireball to the right
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-
-  //Fireball to the left
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-
-
-  //Power charge kick right
-  //Fireball to the right
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, BLUE);  
-    return true;
-  }
-
-  //Power charge kick left
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Fast, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, BLUE);  
-    return true;
-  }
-
   return false;
 } 
