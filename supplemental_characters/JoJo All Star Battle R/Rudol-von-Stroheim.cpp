@@ -1,4 +1,4 @@
-//  Stroheim.cpp
+//  Rudol-von-Stroheim.cpp
 //
 //  Copyright 2023 Paradise Arcade Shop, ParadiseArcadeShop.com  
 //  All rights reserved.  Use is subject to license terms.
@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Kaimana Stroheim character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
+//  Kaimana Rudol-von-Stroheim character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
 //  Created:  April 2025 by Hunter "Mushinsha" Nelson
@@ -34,7 +34,7 @@
 #include "Characters.h"
 
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
-bool Stroheim::testForCharacterCombos() const
+bool Rudol-von-Stroheim::testForCharacterCombos() const
 {
   
   
