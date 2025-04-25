@@ -1,68 +1,56 @@
 COMPLETE THE FOLLOWING:
-
 -----------------------------------
 
-Update movelist for game rosters:
-
-Fatal Fury CotW 
-
-Killer Instinct 
-
-Third Strike
-
-Complete Street Fighter 6
-
+- Update movelist for game rosters:
+    - Fatal Fury CotW 
+    - Killer Instinct 
+    - Third Strike
+    - Complete Street Fighter 6
+-----------------------------------
+- Add inputs for Goldlewis Dickenson's Behemoth Typhoon variants
 -----------------------------------
 
-Add inputs for Goldlewis Dickenson's Behemoth Typhoon variants
-
+- Missing from Street Fighter 6:
+    - AKI
+    - Cammy
+    - Ed
+    - Elena
+    - Jamie
+    - Juri
+    - Kimberly
+    - Luke
+    - MBison
+    - Mai
+    - Manon
+    - Rashid
 -----------------------------------
 
-Missing from Street Fighter 6:
-
-AKI
-Cammy
-Ed
-Elena
-Jamie
-Juri
-Kimberly
-Luke
-MBison
-Mai
-Manon
-Rashid
-
------------------------------------
-
-Missing from Guilty Gear Strive:
-
-ABA 
-Anji 
-Asuka 
-Axl 
-Bedman
-Bridget
-Chipp
-Dizzy
-Elphelt
-Faust
-Goldlewis
-HappyChaos
-Ino
-Jack-O
-Johnny
-Ky
-Lucy
-May
-Millia
-Nagoriyuki
-Ramlethal
-Sin
-Slayer
-Testament (the current code is just a test for all inputs)
-Unika
-Venom
-Zato
-
+- Missing from Guilty Gear Strive:
+    - ABA 
+    - Anji 
+    - Asuka 
+    - Axl 
+    - Bedman
+    - Bridget
+    - Chipp
+    - Dizzy
+    - Elphelt
+    - Faust
+    - Goldlewis
+    - HappyChaos
+    - Ino
+    - Jack-O
+    - Johnny
+    - Ky
+    - Lucy
+    - May
+    - Millia
+    - Nagoriyuki
+    - Ramlethal
+    - Sin
+    - Slayer
+    - Testament (the current code is just a test for all inputs)
+    - Unika
+    - Venom
+    - Zato
 -----------------------------------
