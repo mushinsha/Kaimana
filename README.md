@@ -25,7 +25,7 @@ COMPLETE THE FOLLOWING:
     - Rashid
 -----------------------------------
 
-- Missing from Guilty Gear Strive:
+- Missing movelists from Guilty Gear Strive:
     - ABA 
     - Anji 
     - Asuka 
