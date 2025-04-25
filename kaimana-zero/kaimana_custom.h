@@ -260,6 +260,12 @@ const EInputTypes COMBO_DEADLYRAVE_LEFT[DEADLYRAVE_INPUT_COUNT] PROGMEM = { EIT_
 const EInputTypes COMBO_RAGINGSTORM_RIGHT[RAGINGSTORM_INPUT_COUNT] PROGMEM = { EIT_Input_DownLeft, EIT_Input_Right, EIT_Input_DownRight, EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left, EIT_Input_DownRight };
 const EInputTypes COMBO_RAGINGSTORM_LEFT[RAGINGSTORM_INPUT_COUNT] PROGMEM = { EIT_Input_DownRight, EIT_Input_Left, EIT_Input_DownLeft, EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right, EIT_Input_DownLeft };
 
+//Behemoth Typhoon (Goldlewis Dickenson special from Guilty Gear Strive)
+#define BEHEMOTHTYPHOON_INPUT_COUNT 5
+const EInputTypes COMBO_BEHEMOTHTYPHOON_CLOCKWISE_DOWN_TO_UP[BEHEMOTHTYPHOON_INPUT_COUNT] PROGMEM = { EIT_Input_Down, EIT_Input_DownLeft, EIT_Input_Left, EIT_Input_UpLeft, EIT_Input_Up};
+const EInputTypes COMBO_BEHEMOTHTYPHOON_ANTICLOCKWISE_DOWN_TO_UP[BEHEMOTHTYPHOON_INPUT_COUNT] PROGMEM = { EIT_Input_Down, EIT_Input_DownRight, EIT_Input_Right, EIT_Input_UpRight, EIT_Input_Up};
+const EInputTypes COMBO_BEHEMOTHTYPHOON_CLOCKWISE_UP_TO_DOWN[BEHEMOTHTYPHOON_INPUT_COUNT] PROGMEM = { EIT_Input_Up, EIT_Input_UpRight, EIT_Input_Right, EIT_Input_DownRight, EIT_Input_Down};
+const EInputTypes COMBO_BEHEMOTHTYPHOON_ANTICLOCKWISE_UP_TO_DOWN[BEHEMOTHTYPHOON_INPUT_COUNT] PROGMEM = { EIT_Input_Up, EIT_Input_UpLeft, EIT_Input_Left, EIT_Input_DownLeft, EIT_Input_Down};
 
 // data points for color cycling
 //

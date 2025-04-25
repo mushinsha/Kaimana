@@ -6,8 +6,25 @@ COMPLETE THE FOLLOWING:
     - Killer Instinct 
     - Third Strike
     - Complete Street Fighter 6
+    - Marvel Super Heroes
+
 -----------------------------------
-- Add inputs for Goldlewis Dickenson's Behemoth Typhoon variants
+
+- Add the following games:
+    - Marvel Vs Capcom
+    - Marvel Vs Capcom 2
+    - Marvel Vs Capcom 3 (and Ultimate)
+    - Marvel Vs Capcom Infinite
+    - Marvel Super Heroes Vs Street Fighter
+    - X-Men: Children of the Atom
+    - Capcom Vs SNK
+    - Capcom Vs SNK 2
+    - Street Fighter 4 + All Versions
+    - Last Blade
+    - Last Blade 2
+    - Samurai Shodown
+    - Darkstalkers (maybe just latest version)
+
 -----------------------------------
 
 - Missing from Street Fighter 6:
@@ -23,6 +40,7 @@ COMPLETE THE FOLLOWING:
     - Mai
     - Manon
     - Rashid
+
 -----------------------------------
 
 - Missing movelists from Guilty Gear Strive:
@@ -53,4 +71,5 @@ COMPLETE THE FOLLOWING:
     - Unika
     - Venom
     - Zato
+
 -----------------------------------
