@@ -1,4 +1,4 @@
-//  Joseph_part2.cpp
+//  Joseph_P2.cpp
 //
 //  Copyright 2023 Paradise Arcade Shop, ParadiseArcadeShop.com  
 //  All rights reserved.  Use is subject to license terms.
@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Kaimana Joseph_part2 character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
+//  Kaimana Joseph_P2 character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
 //  Created:  April 2025 by Hunter "Mushinsha" Nelson
@@ -34,7 +34,7 @@
 #include "Characters.h"
 
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
-bool Joseph_part2::testForCharacterCombos() const
+bool Joseph_P2::testForCharacterCombos() const
 {
 
   
