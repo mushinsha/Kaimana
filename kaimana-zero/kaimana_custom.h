@@ -31,7 +31,7 @@
 #define LED_PER_BUTTON 2
 
 //Use this if using J2's for leverless buttons
-#define LED_PER_JOYSTICK_DIRECTION 2
+#define LED_PER_JOYSTICK_DIRECTION 3
 //Use this if using J4's for leverless buttons or the new Arcade Paradise 16 LED stick controller
 //#define LED_PER_JOYSTICK_DIRECTION 4
 
@@ -40,7 +40,7 @@
 
 //Set Led order here. The gap between each button/direction should match the numbers you just set above.
 
-
+/*
 //LEVERLESS BUTTON ORDER (BLACK TE2+ ORDER)
 #ifdef _LED_ORDER_FULL
 #define  LED_LEFT       0
@@ -70,9 +70,10 @@
 
 #define  LED_COUNT      24
 #endif
+*/
 
 
-/*
+// /*
 //JOYSTICK BUTTON ORDER (BLUE TE2 ORDER)
 #ifdef _LED_ORDER_FULL
 #define  LED_P1         0
@@ -91,19 +92,23 @@
 #define  LED_K2_B       13
 #define  LED_K1         14
 #define  LED_K1_B       15
-#define  LED_UP         16
+#define  LED_UP_A       16
 #define  LED_UP_B       17
-#define  LED_LEFT       18
-#define  LED_LEFT_B     19
-#define  LED_DOWN       20
-#define  LED_DOWN_B     21
-#define  LED_RIGHT      22
-#define  LED_RIGHT_B    23  
+#define  LED_UP_C       18
+#define  LED_LEFT_A     19
+#define  LED_LEFT_B     20
+#define  LED_LEFT_C     21
+#define  LED_DOWN_A     22
+#define  LED_DOWN_B     23
+#define  LED_DOWN_C     24
+#define  LED_RIGHT_A    25
+#define  LED_RIGHT_B    26 
+#define  LED_RIGHT_B    27
 
 
-#define  LED_COUNT      24
+#define  LED_COUNT      28
 #endif
-*/
+// */
 
 
 #define  LED_ENTRIES         12 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)

@@ -358,67 +358,6 @@ void WaveEffect_Combo_Animation(EWaveType WaveDirection, EWaveSpeed AnimSpeed, i
   kaimana.setALL( BLACK );
   delay( MIN_LED_UPDATE_DELAY ); // give leds time to update
 
-  //MUSHINSHA CHANGES ADDED 4/13/25
-  /* 
-  //Generate button information
-  if(WaveDirection == EFT_LeftToRight || WaveDirection == EFT_LeftToRightPunchOnly || WaveDirection == EFT_LeftToRightKickOnly)
-  {
-    WaveButtons[0].Button = LED_LEFT;
-    WaveButtons[0].Group =  WaveDirection == EFT_LeftToRightKickOnly ? -1 : 0;
-    WaveButtons[1].Button = LED_DOWN;
-    WaveButtons[1].Group = WaveDirection == EFT_LeftToRightPunchOnly ? -1 : 0;
-    WaveButtons[2].Button = LED_RIGHT;
-    WaveButtons[2].Group = WaveDirection == EFT_LeftToRightKickOnly ? -1 : 1;
-    WaveButtons[3].Button = LED_UP;
-    WaveButtons[3].Group = WaveDirection == EFT_LeftToRightPunchOnly ? -1 : 1;
-    WaveButtons[4].Button = LED_P1;
-    WaveButtons[4].Group = WaveDirection == EFT_LeftToRightKickOnly ? -1 : 2;
-    WaveButtons[5].Button = LED_K1;
-    WaveButtons[5].Group = WaveDirection == EFT_LeftToRightPunchOnly ? -1 : 2;
-    WaveButtons[6].Button = LED_P2;
-    WaveButtons[6].Group = WaveDirection == EFT_LeftToRightKickOnly ? -1 : 3;
-    WaveButtons[7].Button = LED_K2;
-    WaveButtons[7].Group = WaveDirection == EFT_LeftToRightPunchOnly ? -1 : 3;
-    WaveButtons[8].Button = LED_P3;
-    WaveButtons[8].Group = WaveDirection == EFT_LeftToRightKickOnly ? -1 : 4;
-    WaveButtons[9].Button = LED_K3;
-    WaveButtons[9].Group = WaveDirection == EFT_LeftToRightPunchOnly ? -1 : 4;
-    WaveButtons[10].Button = LED_P4;
-    WaveButtons[10].Group = WaveDirection == EFT_LeftToRightKickOnly ? -1 : 5;
-    WaveButtons[11].Button = LED_K4;
-    WaveButtons[11].Group = WaveDirection == EFT_LeftToRightPunchOnly ? -1 : 5;
-    
-  }
-  else if(WaveDirection == EFT_RightToLeft || WaveDirection == EFT_RightToLeftPunchOnly || WaveDirection == EFT_RightToLeftKickOnly)
-  {
-    WaveButtons[0].Button = LED_P4;
-    WaveButtons[0].Group = WaveDirection == EFT_RightToLeftKickOnly ? -1 : 0;
-    WaveButtons[1].Button = LED_K4;
-    WaveButtons[1].Group = WaveDirection == EFT_RightToLeftPunchOnly ? -1 : 0;
-    WaveButtons[2].Button = LED_P3;
-    WaveButtons[2].Group = WaveDirection == EFT_RightToLeftKickOnly ? -1 : 1;
-    WaveButtons[3].Button = LED_K3;
-    WaveButtons[3].Group = WaveDirection == EFT_RightToLeftPunchOnly ? -1 : 1;
-    WaveButtons[4].Button = LED_P2;
-    WaveButtons[4].Group = WaveDirection == EFT_RightToLeftKickOnly ? -1 : 2;
-    WaveButtons[5].Button = LED_K2;
-    WaveButtons[5].Group = WaveDirection == EFT_RightToLeftPunchOnly ? -1 : 2;
-    WaveButtons[6].Button = LED_P1;
-    WaveButtons[6].Group = WaveDirection == EFT_RightToLeftKickOnly ? -1 : 3;
-    WaveButtons[7].Button = LED_K1;
-    WaveButtons[7].Group = WaveDirection == EFT_RightToLeftPunchOnly ? -1 : 3;  
-    WaveButtons[8].Button = LED_UP;
-    WaveButtons[8].Group = WaveDirection == EFT_RightToLeftKickOnly ? -1 : 4;
-    WaveButtons[9].Button = LED_RIGHT;
-    WaveButtons[9].Group = WaveDirection == EFT_RightToLeftPunchOnly ? -1 : 4;
-    WaveButtons[10].Button = LED_DOWN;
-    WaveButtons[10].Group = WaveDirection == EFT_RightToLeftKickOnly ? -1 : 5;
-    WaveButtons[11].Button = LED_LEFT;
-    WaveButtons[11].Group = WaveDirection == EFT_RightToLeftPunchOnly ? -1 : 5;  
-  }
-  else
-  //MUSHINSHA EDIT 4/13/25 - BELOW CODE PRIOR TO CHANGES
-  */  
   
   //Generate button information
   if(WaveDirection == EFT_LeftToRight || WaveDirection == EFT_LeftToRightPunchOnly || WaveDirection == EFT_LeftToRightKickOnly)
