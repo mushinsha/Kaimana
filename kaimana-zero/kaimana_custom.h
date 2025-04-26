@@ -31,7 +31,7 @@
 #define LED_PER_BUTTON 2
 
 //Use this if using J2's for leverless buttons
-#define LED_PER_JOYSTICK_DIRECTION 3
+#define LED_PER_JOYSTICK_DIRECTION 1
 //Use this if using J4's for leverless buttons or the new Arcade Paradise 16 LED stick controller
 //#define LED_PER_JOYSTICK_DIRECTION 4
 
