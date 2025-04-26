@@ -92,16 +92,16 @@
 #define  LED_K2_B       13
 #define  LED_K1         14
 #define  LED_K1_B       15
-#define  LED_UP_A       16
+#define  LED_UP         16
 #define  LED_UP_B       17
 #define  LED_UP_C       18
-#define  LED_LEFT_A     19
+#define  LED_LEFT       19
 #define  LED_LEFT_B     20
 #define  LED_LEFT_C     21
-#define  LED_DOWN_A     22
+#define  LED_DOWN       22
 #define  LED_DOWN_B     23
 #define  LED_DOWN_C     24
-#define  LED_RIGHT_A    25
+#define  LED_RIGHT      25
 #define  LED_RIGHT_B    26 
 #define  LED_RIGHT_B    27
 
