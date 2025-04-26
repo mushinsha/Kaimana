@@ -31,7 +31,7 @@
 #define LED_PER_BUTTON 2
 
 //Use this if using J2's for leverless buttons
-#define LED_PER_JOYSTICK_DIRECTION 1
+#define LED_PER_JOYSTICK_DIRECTION 3
 //Use this if using J4's for leverless buttons or the new Arcade Paradise 16 LED stick controller
 //#define LED_PER_JOYSTICK_DIRECTION 4
 
@@ -92,18 +92,19 @@
 #define  LED_K2_B       13
 #define  LED_K1         14
 #define  LED_K1_B       15
-#define  LED_UP         16
+#define  LED_UP         16  
 #define  LED_UP_B       17
 #define  LED_UP_C       18
-#define  LED_LEFT       19
-#define  LED_LEFT_B     20
-#define  LED_LEFT_C     21
+#define  LED_RIGHT      19
+#define  LED_RIGHT_B    20 
+#define  LED_RIGHT_C    21
 #define  LED_DOWN       22
 #define  LED_DOWN_B     23
 #define  LED_DOWN_C     24
-#define  LED_RIGHT      25
-#define  LED_RIGHT_B    26 
-#define  LED_RIGHT_B    27
+#define  LED_LEFT       25
+#define  LED_LEFT_B     26
+#define  LED_LEFT_C     27
+
 
 
 #define  LED_COUNT      28
@@ -111,9 +112,11 @@
 // */
 
 
-#define  LED_ENTRIES         12 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
+#define  LED_ENTRIES         28 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
 //List all buttons that have LED's on them here. NOTE: Order here specifies the idle type "Circle pulse" order. If you have leverless and a jump button where your thumb is then you should swap the positions of up and down. you may also want to move Left to the beginning of the list
-const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_UP }; 
+//const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_UP };
+
+const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_LEFT_B, LED_LEFT_C, LED_DOWN, LED_DOWN_B, LED_DOWN_C, LED_RIGHT, LED_RIGHT_B, LED_RIGHT_C, LED_UP, LED_UP_B, LED_UP_C, LED_P1, LED_P1_B, LED_P2, LED_P2_B, LED_P3, LED_P3_B, LED_P4, LED_P4_B,  LED_K4, LED_K4_B, LED_K3, LED_K3_B, LED_K2, LED_K2_B, LED_K1, LED_K1_B };  
 
 //Which button to hold to enter tourney mode (turns off all lights and effects). The commented out version is an example where I dont have a home button so I want to use k4 but since thats already in ledList directly above then I set the led to shine here as 0xFF so its ignored.
 #define PIN_TO_SWITCH_TO_TOURNEY_MODE PIN_HOME
@@ -147,10 +150,10 @@ const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_
 
 
 #define IDLE_PULSE_SPEED   0.002  // how fast Static pulse should be (lower = slower)
-#define IDLE_CIRCLEPULSE_SPEED   8  // how fast circle pulse should Travel (lower = slower). This must be a factor of 256 (so 1,2,4,8,16,32,64,128). I dont recommend going over 32
+#define IDLE_CIRCLEPULSE_SPEED   4  // how fast circle pulse should Travel (lower = slower). This must be a factor of 256 (so 1,2,4,8,16,32,64,128). I dont recommend going over 32
 
 
-#define  IDLE_TIMEOUT_SECONDS       1    // value in seconds before the idle animation kicks in - normally 60 or 30 seconds but set very short for testing
+#define  IDLE_TIMEOUT_SECONDS       3    // value in seconds before the idle animation kicks in - normally 60 or 30 seconds but set very short for testing
 
 
 
