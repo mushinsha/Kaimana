@@ -1,6 +1,7 @@
 //-------------------------------------------------------------------------------------------------------------------//
 
-This is a fork of Prod's Kaimana codebase that I have barely tweaked for my own uses. All credit goes to him
+ - This is a fork of Prod's Kaimana codebase that I have altered for my own uses. 
+  - All credit for the codebase I'm working with goes to him
 
 //------------------------------------------------------------------------------------------------------------------//
 
