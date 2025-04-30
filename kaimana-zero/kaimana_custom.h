@@ -23,8 +23,6 @@
 
 
 
-
-
 // Use this for J4's on your buttons
 //#define LED_PER_BUTTON 4
 // Use this for J2's on your buttons
@@ -40,41 +38,9 @@
 
 //Set Led order here. The gap between each button/direction should match the numbers you just set above.
 
-/*
-//LEVERLESS BUTTON ORDER (BLACK TE2+ ORDER)
-#ifdef _LED_ORDER_FULL
-#define  LED_LEFT       0
-#define  LED_LEFT_B     1
-#define  LED_DOWN       2
-#define  LED_DOWN_B     3
-#define  LED_RIGHT      4
-#define  LED_RIGHT_B    5  
-#define  LED_P1         6
-#define  LED_P1_B       7
-#define  LED_P2         8 
-#define  LED_P2_B       9
-#define  LED_P3         10
-#define  LED_P3_B       11
-#define  LED_P4         12
-#define  LED_P4_B       13
-#define  LED_K4         14
-#define  LED_K4_B       15
-#define  LED_K3         16
-#define  LED_K3_B       17
-#define  LED_K2         18
-#define  LED_K2_B       19
-#define  LED_K1         20
-#define  LED_K1_B       21
-#define  LED_UP         22
-#define  LED_UP_B       23
-
-#define  LED_COUNT      24
-#endif
-*/
 
 
-// /*
-//JOYSTICK BUTTON ORDER (BLUE TE2 ORDER)
+//JOYSTICK BUTTON ORDER
 #ifdef _LED_ORDER_FULL
 #define  LED_P1         0
 #define  LED_P1_B       1
@@ -106,15 +72,12 @@
 #define  LED_LEFT_C     27
 
 
-
 #define  LED_COUNT      28
 #endif
-// */
 
 
 #define  LED_ENTRIES         28 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
 //List all buttons that have LED's on them here. NOTE: Order here specifies the idle type "Circle pulse" order. If you have leverless and a jump button where your thumb is then you should swap the positions of up and down. you may also want to move Left to the beginning of the list
-//const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_UP };
 
 const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_LEFT_B, LED_LEFT_C, LED_UP, LED_UP_B, LED_UP_C,  LED_P1, LED_P1_B, LED_P2, LED_P2_B, LED_P3, LED_P3_B, LED_P4, LED_P4_B,  LED_K4, LED_K4_B, LED_K3, LED_K3_B, LED_K2, LED_K2_B, LED_K1, LED_K1_B, LED_RIGHT, LED_RIGHT_B, LED_RIGHT_C, LED_DOWN, LED_DOWN_B, LED_DOWN_C };  
 
