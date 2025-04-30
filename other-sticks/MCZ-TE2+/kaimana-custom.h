@@ -41,7 +41,7 @@
 //Set Led order here. The gap between each button/direction should match the numbers you just set above.
 
 
-//LEVERLESS BUTTON ORDER (BLACK TE2+ ORDER)
+//LEVERLESS BUTTON ORDER
 #ifdef _LED_ORDER_FULL
 #define  LED_LEFT       0
 #define  LED_LEFT_B     1
