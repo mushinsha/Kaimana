@@ -31,7 +31,7 @@
 #define LED_PER_BUTTON 2
 
 //Use this if using J2's for leverless buttons
-#define LED_PER_JOYSTICK_DIRECTION 2
+#define LED_PER_JOYSTICK_DIRECTION 3
 //Use this if using J4's for leverless buttons or the new Arcade Paradise 16 LED stick controller
 //#define LED_PER_JOYSTICK_DIRECTION 4
 
@@ -73,7 +73,7 @@
 
 #define  LED_ENTRIES         24 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
 //List all buttons that have LED's on them here. NOTE: Order here specifies the idle type "Circle pulse" order. If you have leverless and a jump button where your thumb is then you should swap the positions of up and down. you may also want to move Left to the beginning of the list
-const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_LEFT_B, LED_DOWN, LED_DOWN_B, LED_RIGHT, LED_RIGHT_B, LED_P1, LED_P1_B, LED_P2, LED_P2_B, LED_P3, LED_P3_B, LED_P4, LED_P4_B, LED_K4, LED_K4_B LED_K3, LED_K3_B, LED_K2, LED_K2_B, LED_K1, LED_K1_B, LED_UP, LED_UP_B };
+const unsigned char ledList[LED_ENTRIES] = { LED_UP, LED_UP_B, LED_K1, LED_K1_B, LED_K2, LED_K2_B, LED_K3, LED_K3_B, LED_K4, LED_K4_B, LED_P4, LED_P4_B, LED_P3, LED_P3_B, LED_P2, LED_P2_B, LED_P1, LED_P1_B, LED_RIGHT, LED_RIGHT_B, LED_DOWN, LED_DOWN_B, LED_LEFT, LED_LEFT_B };
 
 //Which button to hold to enter tourney mode (turns off all lights and effects). The commented out version is an example where I dont have a home button so I want to use k4 but since thats already in ledList directly above then I set the led to shine here as 0xFF so its ignored.
 #define PIN_TO_SWITCH_TO_TOURNEY_MODE PIN_HOME

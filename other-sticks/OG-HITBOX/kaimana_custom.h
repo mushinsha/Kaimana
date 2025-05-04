@@ -43,30 +43,30 @@
 
 //LEVERLESS BUTTON ORDER
 #ifdef _LED_ORDER_FULL
-#define  LED_LEFT       0
-#define  LED_LEFT_B     1
-#define  LED_DOWN       2
-#define  LED_DOWN_B     3
-#define  LED_RIGHT      4
-#define  LED_RIGHT_B    5  
-#define  LED_P1         6
-#define  LED_P1_B       7
-#define  LED_P2         8 
-#define  LED_P2_B       9
-#define  LED_P3         10
-#define  LED_P3_B       11
-#define  LED_P4         12
-#define  LED_P4_B       13
-#define  LED_K4         14
-#define  LED_K4_B       15
-#define  LED_K3         16
-#define  LED_K3_B       17
-#define  LED_K2         18
-#define  LED_K2_B       19
-#define  LED_K1         20
-#define  LED_K1_B       21
-#define  LED_UP         22
-#define  LED_UP_B       23
+#define  LED_UP         0
+#define  LED_UP_B       1
+#define  LED_K1         2
+#define  LED_K1_B       3
+#define  LED_K2         4
+#define  LED_K2_B       5
+#define  LED_K3         6
+#define  LED_K3_B       7
+#define  LED_K4         8
+#define  LED_K4_B       9  
+#define  LED_P4         10
+#define  LED_P4_B       11
+#define  LED_P3         12
+#define  LED_P3_B       13
+#define  LED_P2         14
+#define  LED_P2_B       15
+#define  LED_P1         16
+#define  LED_P1_B       17
+#define  LED_RIGHT      18
+#define  LED_RIGHT_B    19
+#define  LED_DOWN       20
+#define  LED_DOWN_B     21
+#define  LED_LEFT       22
+#define  LED_LEFT_B     23
 
 #define  LED_COUNT      24
 #endif
