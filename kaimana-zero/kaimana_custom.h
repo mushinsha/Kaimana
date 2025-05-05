@@ -26,9 +26,9 @@
 
 
 // Use this for J4's on your buttons
-//#define LED_PER_BUTTON 4
+#define LED_PER_BUTTON 4
 // Use this for J2's on your buttons
-#define LED_PER_BUTTON 2
+//#define LED_PER_BUTTON 2
 
 //Use this if using J2's for leverless buttons
 #define LED_PER_JOYSTICK_DIRECTION 3
@@ -41,39 +41,31 @@
 //Set Led order here. The gap between each button/direction should match the numbers you just set above.
 
 
-//LEVERLESS BUTTON ORDER
+//JOYSTICK BUTTON ORDER (BLUE TE2 ORDER)
 #ifdef _LED_ORDER_FULL
-#define  LED_UP         0
-#define  LED_UP_B       1
-#define  LED_K1         2
-#define  LED_K1_B       3
-#define  LED_K2         4
-#define  LED_K2_B       5
-#define  LED_K3         6
-#define  LED_K3_B       7
-#define  LED_K4         8
-#define  LED_K4_B       9  
-#define  LED_P4         10
-#define  LED_P4_B       11
-#define  LED_P3         12
-#define  LED_P3_B       13
-#define  LED_P2         14
-#define  LED_P2_B       15
-#define  LED_P1         16
-#define  LED_P1_B       17
-#define  LED_RIGHT      18
-#define  LED_RIGHT_B    19
-#define  LED_DOWN       20
-#define  LED_DOWN_B     21
-#define  LED_LEFT       22
-#define  LED_LEFT_B     23
 
-#define  LED_COUNT      24
+#define  LED_P1         0
+#define  LED_P2         4 
+#define  LED_P3         8
+#define  LED_P4         12
+#define  LED_K4         16
+#define  LED_K3         20
+#define  LED_K2         24
+#define  LED_K1         28
+#define  LED_UP         32  
+#define  LED_RIGHT      35
+#define  LED_DOWN       38
+#define  LED_LEFT       41
+
+#define  LED_COUNT      44
 #endif
 
-#define  LED_ENTRIES         24 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
+
+#define  LED_ENTRIES         44 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
 //List all buttons that have LED's on them here. NOTE: Order here specifies the idle type "Circle pulse" order. If you have leverless and a jump button where your thumb is then you should swap the positions of up and down. you may also want to move Left to the beginning of the list
-const unsigned char ledList[LED_ENTRIES] = { LED_UP, LED_UP_B, LED_K1, LED_K1_B, LED_K2, LED_K2_B, LED_K3, LED_K3_B, LED_K4, LED_K4_B, LED_P4, LED_P4_B, LED_P3, LED_P3_B, LED_P2, LED_P2_B, LED_P1, LED_P1_B, LED_RIGHT, LED_RIGHT_B, LED_DOWN, LED_DOWN_B, LED_LEFT, LED_LEFT_B };
+//const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_UP };
+
+const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_UP, LED_P1, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_RIGHT, LED_DOWN, };  
 
 //Which button to hold to enter tourney mode (turns off all lights and effects). The commented out version is an example where I dont have a home button so I want to use k4 but since thats already in ledList directly above then I set the led to shine here as 0xFF so its ignored.
 #define PIN_TO_SWITCH_TO_TOURNEY_MODE PIN_HOME
