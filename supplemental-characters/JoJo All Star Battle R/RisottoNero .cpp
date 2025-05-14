@@ -1,4 +1,4 @@
-//  Esidisi.cpp
+//  RisottoNero.cpp
 //
 //  Copyright 2023 Paradise Arcade Shop, ParadiseArcadeShop.com  
 //  All rights reserved.  Use is subject to license terms.
@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Kaimana Esidisi character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
+//  Kaimana RisottoNero character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
 //  Created:  April 2025 by Hunter "Mushinsha" Nelson
@@ -34,9 +34,9 @@
 #include "Characters.h"
 
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
-bool Esidisi::testForCharacterCombos() const
+bool RisottoNero::testForCharacterCombos() const
 {
-  
+
 //MOVELIST BELOW
 
 //SUPER ARTS
@@ -51,6 +51,6 @@ bool Esidisi::testForCharacterCombos() const
   //Fake Byakko Soushouda       [214 + PP]
   //Zenpou Tenshin              [63214 + K]
   //Kaihou                      [623 + K]
-  
+
   return false;
 } 

@@ -1,4 +1,4 @@
-//  Giorno-Giovanna.cpp
+//  GiornoGiovanna.cpp
 //
 //  Copyright 2023 Paradise Arcade Shop, ParadiseArcadeShop.com  
 //  All rights reserved.  Use is subject to license terms.
@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Kaimana Giorno-Giovanna character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
+//  Kaimana GiornoGiovanna character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
 //  Created:  April 2025 by Hunter "Mushinsha" Nelson
@@ -34,10 +34,23 @@
 #include "Characters.h"
 
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
-bool Giorno-Giovanna::testForCharacterCombos() const
+bool GiornoGiovanna::testForCharacterCombos() const
 {
   
+//MOVELIST BELOW
+
+//SUPER ARTS
+  //Raishin Mahha Ken           [236236 + P] (SA1)
+  //Tenshin Senkyuutai          [236236 + K] (SA2)
+  //Sei'ei Enbu                 [236236 + P] (SA3)
   
+//SPECIAL MOVES
+  //Tourou Zan                  [236 + P]
+  //Senkyuutai                  [236 + K]
+  //Byakko Soushouda            [214 + P]
+  //Fake Byakko Soushouda       [214 + PP]
+  //Zenpou Tenshin              [63214 + K]
+  //Kaihou                      [623 + K]
   
   return false;
 } 
