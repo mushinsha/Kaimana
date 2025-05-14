@@ -36,143 +36,20 @@
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
 bool Necro::testForCharacterCombos() const
 {
-  //RisingFang (both sides)
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ))
-  {
-    FlashAllSpeedIncreasing_Combo_Animation(ORANGE);
-    return true;
-  }
+
+//MOVELIST BELOW
+
+//SUPER ARTS
+  //Magnetic Storm              [236236 + P (TAP P)] (SA1)
+  //Slam Dance                  [236236 + P] (SA2)
+  //Eletric Snake               [236236 + P] (SA3)
   
-  //BusterWolf right
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_RIGHT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 2, GOLD);  
-    return true;
-  }
-    
-  //BusterWolf left
-  if( kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) ||
-      kaimana.switchHistoryTest( COMBO_DOUBLE_QUARTERCIRCLE_LEFT, DOUBLE_QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, GOLD);  
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 2, GOLD);  
-    return true;
-  }
-
-
-  //Dragon punch right
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 250);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 500);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_LEFT, DP_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 750);
-    return true;
-  }
-    
-  //Dragon punch left
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 250);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 500);
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_DP_RIGHT, DP_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    FlashColour_Combo_Animation(GOLD, 750);
-    return true;
-  }
-
-
-  //Fireball to the right
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-
-  //Fireball to the left
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, GOLD);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, P3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_DownToUp, EFS_Slow, 0, GOLD);  
-    return true;
-  }
-
-
-  //Power charge kick right
-  //Fireball to the right
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Fast, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Medium, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_RIGHT, QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_LeftToRight, EFS_Slow, 0, BLUE);  
-    return true;
-  }
-
-  //Power charge kick left
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K1Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Fast, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K2Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Medium, 0, BLUE);  
-    return true;
-  }
-  if( kaimana.switchHistoryTest( COMBO_QUARTERCIRCLE_LEFT, QUARTERCIRCLE_INPUT_COUNT, K3Array, 1, false ) )
-  {
-    WaveEffect_Combo_Animation(EFT_RightToLeft, EFS_Slow, 0, BLUE);  
-    return true;
-  }
+//SPECIAL MOVES
+  //Snake Fang                  [41236 + K]
+  //Denji Blast                 [623 + P (TAP P)]
+  //Flying Viper                [214 + P]
+  //Rising Cobra                [214 + K]
+  //Tornado Hook                [41236 + P]
 
   return false;
 } 
