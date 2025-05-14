@@ -46,7 +46,7 @@ COMPLETE THE FOLLOWING:
     - Elena
 -----------------------------------
 
-- Missing movelists from Guilty Gear Strive:
+- Missing animations from Guilty Gear Strive:
     - ABA 
     - Anji 
     - Asuka 
@@ -74,5 +74,9 @@ COMPLETE THE FOLLOWING:
     - Unika
     - Venom
     - Zato
+
+- Missing movelists from Guilty Gear Strive:
+    - Lucy
+    - Unika
 
 -----------------------------------
