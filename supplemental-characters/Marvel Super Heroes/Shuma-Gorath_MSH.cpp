@@ -37,7 +37,20 @@
 bool Shuma-Gorath_MSH::testForCharacterCombos() const
 {
   
+//MOVELIST BELOW
+
+//SUPER ARTS
+  //Raishin Mahha Ken           [236236 + P] (SA1)
+  //Tenshin Senkyuutai          [236236 + K] (SA2)
+  //Sei'ei Enbu                 [236236 + P] (SA3)
   
+//SPECIAL MOVES
+  //Tourou Zan                  [236 + P]
+  //Senkyuutai                  [236 + K]
+  //Byakko Soushouda            [214 + P]
+  //Fake Byakko Soushouda       [214 + PP]
+  //Zenpou Tenshin              [63214 + K]
+  //Kaihou                      [623 + K]
   
   return false;
 } 
