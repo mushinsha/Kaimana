@@ -37,6 +37,20 @@
 bool Testament::testForCharacterCombos() const
 {
   
+//MOVELIST BELOW
+
+//OVERDRIVES
+  //Nostrovia                [236236 + P]
+  //Calamity One             [236236 + K]
+  
+  
+//SPECIAL MOVES
+  //Grave Reaper            [236 + S or HS] (In Air Possible)
+  //Unholy Diver            [214 + P]
+  //Possession              [214 + K] (In Air Possible)
+  //Arbiter Sign            [214 + S or HS]
+
+
   //This is needed for PPP inputs
   EInputTypes P1P2Array[] = {EIT_Input_P1, EIT_Input_P2};
   EInputTypes P1P3Array[] = {EIT_Input_P1, EIT_Input_P3};

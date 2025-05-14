@@ -44,15 +44,13 @@ bool ABA::testForCharacterCombos() const
   //Keeper of the Key               [632146 + K]
 
   //SPECIAL MOVES
-  //Bonding and Dissolving          [214 + HS] (In Air)
+  //Bonding and Dissolving          [214 + HS] (In Air Possible)
   //Changing and Swaying            [63214 + P]
   //Haul and Heed                   [214 + K]
   //Intertwine and Tilt             [236 + K]
   //Menace and Groan                [236 + S]
   //Frenzy and Astonishment         [214 + S]
   //Judgement and Sentiment         [623 + HS] (In Jealous Rage)
-  
-  
   
   return false;
 } 

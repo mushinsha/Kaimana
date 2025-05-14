@@ -1,4 +1,4 @@
-//  Johnny.cpp
+//  JackO.cpp
 //
 //  Copyright 2023 Paradise Arcade Shop, ParadiseArcadeShop.com  
 //  All rights reserved.  Use is subject to license terms.
@@ -18,7 +18,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-//  Kaimana Johnny character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
+//  Kaimana JackO character combo checks and animation calls. First released by ParadiseArcadeShop.com November, 2023
 //  Characters are added into the character selection array in the main ino file. See that for info on how characters are selected
 //
 //  Created:  April 2025 by Hunter "Mushinsha" Nelson
@@ -34,22 +34,23 @@
 #include "Characters.h"
 
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
-bool Johnny::testForCharacterCombos() const
+bool JackO::testForCharacterCombos() const
 {
   
 //MOVELIST BELOW
 
 //OVERDRIVES
-  //That's My Name           [632146 + HS]
-  //Joker Trick              [236236 + S] 
+  //Forever Elysion Driver   [632146 + P]
+  //Cheer Servant On         [236236 + S or HS]
   
 //SPECIAL MOVES
-  //Mist Finer               [214 + P or K or S] (Can be held)
-  //Mist Finer (mid-air)     [214 + P or K or S] (In Air Only)
-  //Deal                     [236 + P or K or S]
-  //Deal (mid-air)           [236 + HS] (In Air Only)
-  //Vault                    [236 + HS]
-  //Ensenga                  [214 + HS]
+  //Summon Servant           [236 + P] (Can be held)
+  //Pick Up Servant          [2 + P] (when near servant)
+  //Recover                  [214 + P] (In Air Possible)
+  //Attack Command           [214 + K] (In Air Possible)
+  //Defend Command           [214 + S] (In Air Possible)
+  //Countdown                [214 + H] (In Air Possible)
+  //Servant Shoot            [236 + K] (In Air Possible)
   
   return false;
 } 
