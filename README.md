@@ -5,7 +5,6 @@ COMPLETE THE FOLLOWING:
     - Fatal Fury CotW 
     - Killer Instinct 
     - Third Strike
-    - Complete Street Fighter 6
     - Marvel Super Heroes
 
 -----------------------------------
