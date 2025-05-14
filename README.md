@@ -27,7 +27,7 @@ COMPLETE THE FOLLOWING:
 
 -----------------------------------
 
-- Missing from Street Fighter 6:
+- Missing animations from Street Fighter 6:
     - AKI
     - Cammy
     - Ed
@@ -35,12 +35,15 @@ COMPLETE THE FOLLOWING:
     - Jamie
     - Juri
     - Kimberly
+    - Lily
     - Luke
     - MBison
     - Mai
     - Manon
     - Rashid
 
+- Missing movelists from Street Fighter 6:
+    - Elena
 -----------------------------------
 
 - Missing movelists from Guilty Gear Strive:
