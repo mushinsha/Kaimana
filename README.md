@@ -10,7 +10,6 @@ COMPLETE THE FOLLOWING:
 -----------------------------------
 
 - Add the following games:
-    - Marvel Vs Capcom
     - Marvel Vs Capcom 2
     - Marvel Vs Capcom 3 (and Ultimate)
     - Marvel Vs Capcom Infinite
@@ -19,9 +18,7 @@ COMPLETE THE FOLLOWING:
     - Capcom Vs SNK
     - Capcom Vs SNK 2
     - Street Fighter 4 + All Versions
-    - Last Blade
     - Last Blade 2
-    - Samurai Shodown
     - Darkstalkers (maybe just latest version)
 
 -----------------------------------
