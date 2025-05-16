@@ -310,51 +310,40 @@ class Sol : public Character
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-    //Example for RED idle mode with 1 rotating WHITE pulse when idling. Out of idle will be YELLOW if not pressed and ORANGE if pressed
-    virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
-    virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(RED); }; //Gi colour
-    virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(BLACK); };
+  //This is a test for the Guilty Gear button layout as a static color
+    virtual RGB_t notPressedStaticColour(int ledIndex) const override { 
+      if(ledIndex == LED_P1)
+        return getRGB(BLUE);
+      if(ledIndex == LED_P2)
+        return getRGB(GREEN);
+      if(ledIndex == LED_P3)
+        return getRGB(YELLOW);
+      if(ledIndex == LED_P4)
+        return getRGB(BLACK);
+      if(ledIndex == LED_K1)
+        return getRGB(MAGENTA);
+      if(ledIndex == LED_K2)
+        return getRGB(RED);
+      
+      //for all other buttons and directions
+      return getRGB(BLACK);
+    };
 
-    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(YELLOW); }; //Skin colour
-    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(WHITE); }; //Shorts/bangle colour
+    virtual RGB_t pressedStaticColour(int ledIndex) const override
+    {
+      if(ledIndex == LED_P4 || ledIndex == LED_K4)
+        return getRGB(RED);
+       if(ledIndex == LED_P1 || ledIndex == LED_K1 || ledIndex == LED_P2 || ledIndex == LED_K2 || ledIndex == LED_P3 || ledIndex == LED_K3)
+        return getRGB(WHITE);
 
+      //all other buttons and directions
+      return getRGB(RED); 
+    };
+
+    virtual int holdPressedButtonColourTimeInMS( ) const { return 250; };  //Make sure this plus...
+    virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
 };
 
-class Ky : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class May : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Axl : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Chipp : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
 
 class Potemkin : public Character
 {
@@ -364,102 +353,12 @@ class Potemkin : public Character
     virtual bool testForCharacterCombos( ) const override;
     
     //Example for RED idle mode with 1 rotating WHITE pulse when idling. Out of idle will be YELLOW if not pressed and ORANGE if pressed
-    virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
-    virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(GREEN); }; //Gi colour
-    virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(BLACK); };
+    //virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
+    //virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(GREEN); }; //Gi colour
+    //virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(BLACK); };
 
-    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(WHITE); }; //Skin colour
-    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //Shorts/bangle colour
-
-};
-
-class Faust : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Millia : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Zato : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Ramlethal : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Anji : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Ino : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Nagoriyuki : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Goldlewis : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class JackO : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class HappyChaos : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
+    //virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(WHITE); }; //Skin colour
+    //virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //Shorts/bangle colour
 
 };
 
@@ -470,14 +369,18 @@ class Baiken : public Character
   public:
     virtual bool testForCharacterCombos( ) const override;
 
-  //Example for RED idle mode with 1 rotating WHITE pulse when idling. Out of idle will be YELLOW if not pressed and ORANGE if pressed
-    virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
-    virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(BLACK); }; //Gi colour
-    virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(PURPLE); };
+  //These are the settings Plagio_96 who requested JP asked for. Comment in or edit as you like.
+    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(BLACK); }; //Skin colour
+    virtual RGB_t pressedStaticColour(int ledIndex) const override
+    {
+      if(ledIndex == LED_P4 || ledIndex == LED_K4)
+        return getRGB(MAGENTA);
+       if(ledIndex == LED_P1 || ledIndex == LED_K1 || ledIndex == LED_P2 || ledIndex == LED_K2 || ledIndex == LED_P3 || ledIndex == LED_K3)
+        return getRGB(RED);
 
-    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //Skin colour
-    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(WHITE); }; //Shorts/bangle colour
-
+      //all other buttons and directions
+      return getRGB(PURPLE); 
+    };
 };
 
 class Testament : public Character
@@ -501,106 +404,7 @@ class Testament : public Character
 
 };
 
-class Bridget : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Sin : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Bedman : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Asuka : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Johnny : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Elphelt : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class ABA : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-	
-};
-
-class Slayer : public Character 
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Dizzy : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Venom : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Unika : public Character
-{
-  private:
- 
-  public:
-    virtual bool testForCharacterCombos( ) const override;
-
-};
-
-class Lucy : public Character
+class NAMEHERE : public Character
 {
   private:
  
