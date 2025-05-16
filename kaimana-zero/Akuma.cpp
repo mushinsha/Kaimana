@@ -33,18 +33,6 @@
 #include "animations.h"
 #include "Characters.h"
 
-
-  //CHARACTERTEST START
-    //These are the settings I like. Comment in and/or if you like.
-    virtual EIdleType getIdleAnimationType() const override { return EIT_Disabled; }
-   
-    virtual int holdPressedButtonColourTimeInMS( ) const { return 500; };  //Make sure this plus...
-    virtual int fadePressedButtonColourTimeInMS( ) const { return 500; };  //...this is less than the time to restart the idle if turnNonHeldButtonsOff is true or it'll get stomped (IDLE_TIMEOUT_SECONDS * 1000)
-
-    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(PURPLE); }; //gi
-    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //hair
-  //CHARACTERTEST END
-
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
 bool Akuma::testForCharacterCombos() const
 {
@@ -213,4 +201,4 @@ bool Akuma::testForCharacterCombos() const
   }
 
   return false;
-} 
+}
