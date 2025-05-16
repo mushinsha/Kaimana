@@ -310,6 +310,14 @@ class Sol : public Character
   public:
     virtual bool testForCharacterCombos( ) const override;
 
+    //Example for RED idle mode with 1 rotating WHITE pulse when idling. Out of idle will be YELLOW if not pressed and ORANGE if pressed
+    virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
+    virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(RED); }; //Gi colour
+    virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(WHITE); };
+
+    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(YELLOW); }; //Skin colour
+    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(ORANGE); }; //Shorts/bangle colour
+
 };
 
 class Ky : public Character
