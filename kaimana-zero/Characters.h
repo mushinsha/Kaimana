@@ -362,6 +362,14 @@ class Potemkin : public Character
  
   public:
     virtual bool testForCharacterCombos( ) const override;
+    
+    //Example for RED idle mode with 1 rotating WHITE pulse when idling. Out of idle will be YELLOW if not pressed and ORANGE if pressed
+    virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
+    virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(GREEN); }; //Gi colour
+    virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(BLACK); };
+
+    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(WHITE); }; //Skin colour
+    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //Shorts/bangle colour
 
 };
 
@@ -462,6 +470,14 @@ class Baiken : public Character
   public:
     virtual bool testForCharacterCombos( ) const override;
 
+  //Example for RED idle mode with 1 rotating WHITE pulse when idling. Out of idle will be YELLOW if not pressed and ORANGE if pressed
+    virtual EIdleType getIdleAnimationType() const override { return EIT_StaticColourCirclePulse; }
+    virtual RGB_t getIdleAnimationStaticColour(int ledIndex) const override { return getRGB(BLACK); }; //Gi colour
+    virtual RGB_t getIdleAnimationPulseColour(int ledIndex) const override { return getRGB(PURPLE); };
+
+    virtual RGB_t notPressedStaticColour(int ledIndex) const override { return getRGB(RED); }; //Skin colour
+    virtual RGB_t pressedStaticColour(int ledIndex) const override { return getRGB(WHITE); }; //Shorts/bangle colour
+
 };
 
 class Testament : public Character
@@ -470,6 +486,18 @@ class Testament : public Character
  
   public:
     virtual bool testForCharacterCombos( ) const override;
+
+  //These are the settings Plagio_96 who requested JP asked for. Comment in or edit as you like.
+    virtual RGB_t pressedStaticColour(int ledIndex) const override
+    {
+      if(ledIndex == LED_P4 || ledIndex == LED_K4)
+        return getRGB(RED);
+       if(ledIndex == LED_P1 || ledIndex == LED_K1 || ledIndex == LED_P2 || ledIndex == LED_K2 || ledIndex == LED_P3 || ledIndex == LED_K3)
+        return getRGB(WHITE);
+
+      //all other buttons and directions
+      return getRGB(GOLD); 
+    };
 
 };
 
