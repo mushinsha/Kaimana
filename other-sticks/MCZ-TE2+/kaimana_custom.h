@@ -61,7 +61,7 @@
 
 #define  LED_ENTRIES         24 // should match the unique entries above (i.e the ones that arent 0xFF) (and thus array size below)
 //List all buttons that have LED's on them here. NOTE: Order here specifies the idle type "Circle pulse" order. If you have leverless and a jump button where your thumb is then you should swap the positions of up and down. you may also want to move Left to the beginning of the list
-const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4 LED_K3, LED_K2, LED_K1, LED_UP };
+const unsigned char ledList[LED_ENTRIES] = { LED_LEFT, LED_DOWN, LED_RIGHT, LED_P1, LED_P2, LED_P3, LED_P4, LED_K4, LED_K3, LED_K2, LED_K1, LED_UP };
 
 
 /*   //J4UPDATE START
