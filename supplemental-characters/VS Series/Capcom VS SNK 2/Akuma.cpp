@@ -39,17 +39,21 @@ bool Akuma::testForCharacterCombos() const
   
 //MOVELIST BELOW
 
-//BURNING VIGOR ATTACKS
-  //Kikou Kai                   [236236 + P] (In Air Possible)
-  //Reflex Barrage              [214214 + P] 
-  //Aerial Barrage              [214214 + K]
-  //Haten Mueishu               [236236 + K]
+//SUPER COMBOS
+  //Messatsu Gouhadou           [6321463214 + P] (In Air Possible)
+  //Messatsu Goushouryu         [23623 + P] 
+  //Tenma Gouzanku              [236236 + P] (AIR ONLY)
+  //Shungokusatsu               [LP, LP, 6LK + HP]
   
 //SPECIAL MOVES
-  //Gate Elbow                  [236 + P]
-  //Leaping Smash               [214 + P]
-  //Dancing Cyclone Kick        [236 + K]
-  //Houbu                       [214 + K]
+  //Gouhadouken                 [236 + P]
+  //Zanku Hadouken              [236 + P] (AIR ONLY)
+  //Shakunetsu Hadouken         [63214 + P]
+  //Goushouryuken               [623 + P]
+  //Tatsumaki Zankukyaku        [214 + K] (In Air Possible)
+  //Hyakkishu                   [623 + K]
+  //Ashura Senku                [623 or 421 + PP or KK]
+  //Zenpou Tenshin              [214 + P]
   
   return false;
 } 
