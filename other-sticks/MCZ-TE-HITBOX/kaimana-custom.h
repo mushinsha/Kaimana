@@ -41,7 +41,7 @@
 //Set Led order here. The gap between each button/direction should match the numbers you just set above.
 
 
-//LEVERLESS BUTTON ORDER
+//LEVERLESS BUTTON ORDER (MADCATZ TE ORDER)
 #ifdef _LED_ORDER_FULL
 #define  LED_UP         0
 #define  LED_K1         2
