@@ -72,7 +72,7 @@ Testament testament;
 //added so many features that it was already right up against the limit with the 8 world warriors in their default setup
 //The easiest way to solve this is to assign the last two slots as the same character. Effectivly giving you 7 profiles
 //instead of 8.
-const Character* AllCharacters[NUM_CHARACTERS] = {&testament, &baiken, &terry, &akuma, &ryu, &gief, &guile, &solBadguy };
+const Character* AllCharacters[NUM_CHARACTERS] = {&solBadguy, &baiken, &terry, &akuma, &ryu, &gief, &guile, &testament };
 
 
 
