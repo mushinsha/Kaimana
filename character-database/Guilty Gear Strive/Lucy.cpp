@@ -36,6 +36,22 @@
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
 bool Lucy::testForCharacterCombos() const
 {
+
+//MOVELIST BELOW
+
+//OVERDRIVES
+  //Quickhack                [632146 + S]
+  //Live Wire                [632146 + HS]
+  
+
+//SPECIAL MOVES
+  //Monowire                 [214 + HS] (Can be held)
+  //Unity                    [236 + S] (Can be held)
+  //Sprint Attack            [214 + K]
+  //Sweep                    [S during Sprint Attack]
+  //Cross Up                 [HS during Sprint Attack]
+  //Monowire - Breakout      [623 + HS]
+  //Tryambaka                [632146 + K]
   
   //This is needed for PPP inputs
   EInputTypes P1P2Array[] = {EIT_Input_P1, EIT_Input_P2};
