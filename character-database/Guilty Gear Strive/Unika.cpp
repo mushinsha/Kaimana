@@ -41,12 +41,12 @@ bool Unika::testForCharacterCombos() const
 
 //OVERDRIVES
   //Megadeath Buster         [632146 + S]
-  //Navaratna Runout         [214214 + H] (While at ≤ 30% HP)
+  //Navaratna Runout         [214214 + HS] (While at ≤ 30% HP)
   
 
 //SPECIAL MOVES
-  //A.M.T.G. Streak          [236 + H] (6 + H during Arbalest)
-  //A.A.T.G. Blitz           [236 + H] (6 + H during Arbalest) (In Air Only)
+  //A.M.T.G. Streak          [236 + HS] (6 + HS during Arbalest)
+  //A.A.T.G. Blitz           [236 + HS] (6 + HS during Arbalest) (In Air Only)
   //A.T.T.G. Penetrate       [236 + K] (6 + K during Arbalest)
   //A.T.T.G. Top-Attack      [214 + K] (4 + K during Arbalest)
   //A.C.T.G. Blast-Off       [623 + S] (6 + S during Arbalest)
