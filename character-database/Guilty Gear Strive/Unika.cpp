@@ -36,6 +36,22 @@
 // Define combo sequences here and corresponding animations. Most complex moves should go first (eg, supers, ultras)
 bool Unika::testForCharacterCombos() const
 {
+
+//MOVELIST BELOW
+
+//OVERDRIVES
+  //Megadeath Buster         [632146 + S]
+  //Navaratna Runout         [214214 + H] (While at ≤ 30% HP)
+  
+
+//SPECIAL MOVES
+  //A.M.T.G. Streak          [236 + H] (6 + H during Arbalest)
+  //A.A.T.G. Blitz           [236 + H] (6 + H during Arbalest) (In Air Only)
+  //A.T.T.G. Penetrate       [236 + K] (6 + K during Arbalest)
+  //A.T.T.G. Top-Attack      [214 + K] (4 + K during Arbalest)
+  //A.C.T.G. Blast-Off       [623 + S] (6 + S during Arbalest)
+  //Blaze a Trail            [214 + S] (4 + S during Arbalest)
+
   
   //This is needed for PPP inputs
   EInputTypes P1P2Array[] = {EIT_Input_P1, EIT_Input_P2};
