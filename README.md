@@ -70,9 +70,3 @@ COMPLETE THE FOLLOWING:
     - Unika
     - Venom
     - Zato
-
-- Missing movelists from Guilty Gear Strive:
-    - Lucy
-    - Unika
-
------------------------------------
