@@ -21,6 +21,7 @@ bool BlackPanther::testForCharacterCombos() const
 //OVERDRIVES
   //Warrior Queen                           [236 + M+H] (In Air Possible)
   //Heart-Shaped Herb                       [632146 + M+H]
+  //Bast's Fury                             [632146 + M+H] (during Heart-Shaped Herb only)
   
 
 //SPECIAL MOVES
