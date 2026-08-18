@@ -19,20 +19,15 @@ bool Blade::testForCharacterCombos() const
 //MOVELIST BELOW
 
 //OVERDRIVES
-  //Zansei Rouga                            [632146 + HS] (In Air Possible)
-  //Banki Messai                            [236236 + P]
+  //Bloodlust                               [236 + M+H]
+  //Muramasa Moon                           [632146 + M+H]
   
 
 //SPECIAL MOVES
-  //Alpha Blade (Horizontal)                [236 + P] (In Air Possible)
-  //Alpha Blade (Diagonal)                  [236 + K] (In Air Possible)
-  //Beta Blade                              [623 + S] (In Air Possible)
-  //Gamma Blade                             [236 + HS]
-  //Resshou                                 [236 + S]
-  //Rokusai (while in Resshou)              [236 + S]
-  //Senshuu (while in Resshou or Rokusai)   [236 + K]
-  //Genrouzan                               [63214 + S]
-  //Shuriken                                [214 + P] (In Air Only)
+  //Bullet Barrage                          [236 + L/M/H] (In Air Possible)
+  //Vampire Slayer                          [623 + L/M/H] 
+  //Vampire Cleave                          [214 + L/M/H] (In Air Possible)
+  //Glaive Strike                           [22 + L/M/H]
   
   return false;
 } 
