@@ -19,8 +19,8 @@ bool BlackPanther::testForCharacterCombos() const
 //MOVELIST BELOW
 
 //OVERDRIVES
-  //Living Legend                           [236 + M+H]
-  //Sentinel of Liberty                     [632146 + M+H]
+  //Warrior Queen                           [236 + M+H] (In Air Possible)
+  //Heart-Shaped Herb                       [632146 + M+H]
   
 
 //SPECIAL MOVES
